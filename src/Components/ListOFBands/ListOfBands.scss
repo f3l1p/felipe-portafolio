@@ -1,0 +1,24 @@
+section {
+	margin: 5rem 0 0 0;
+}
+
+.List-Bands {
+	width: 100%;
+	text-align: center;
+	color: #f7ebe8;
+
+	h2 {
+		font-size: 3rem;
+	}
+
+	span {
+		color: #e54b4b;
+	}
+
+	ul li {
+		list-style: none;
+		font-size: 1.5rem;
+		font-weight: 400;
+		margin: 1.2rem 0 1.2rem 0;
+	}
+}

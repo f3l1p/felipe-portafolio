@@ -1,0 +1,26 @@
+.Embed-Title {
+	margin: 0;
+	padding: 1rem 0 15px 0;
+	width: 700px;
+	height: 5vh;
+	background-color: #201e1e;
+
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+
+	h2 {
+		color: #f7ebe8;
+		margin-left: 2rem;
+		font-size: 2rem;
+		border-bottom: 2px solid;
+	}
+}
+
+.Embed-Spoty {
+	width: fit-content;
+
+	box-shadow: -5px 6px 11px 0px rgba(0, 0, 0, 0.56);
+	-webkit-box-shadow: -5px 6px 11px 0px rgba(0, 0, 0, 0.56);
+	-moz-box-shadow: -5px 6px 11px 0px rgba(0, 0, 0, 0.56);
+}
