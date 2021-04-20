@@ -1,0 +1,54 @@
+.Card-Row {
+	margin: 2.5rem 3rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+
+.Col-Left {
+	width: 50%;
+	height: 100%;
+	text-align: center;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	.Text-Wrap {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-self: center;
+
+		h2,
+		p {
+			margin: 2rem 10rem 0 10rem;
+			color: #f7ebe8;
+		}
+
+		h2 {
+			font-size: 40px;
+			font-weight: 700;
+		}
+
+		p {
+			font-size: 20px;
+			font-weight: 400;
+		}
+	}
+}
+
+.Col-Right {
+	width: 50%;
+	height: 100%;
+	text-align: center;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	img {
+		max-width: 70vh;
+		align-self: center;
+	}
+}

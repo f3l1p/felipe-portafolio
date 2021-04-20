@@ -51,3 +51,15 @@
 .Read-More {
 	color: #e54b4b;
 }
+
+.Soundbetter-wrap {
+	width: 100%;
+	direction: flex;
+	flex-direction: row;
+	text-align: center;
+
+	.Soundbetter {
+		max-width: 200px;
+		margin: 3rem 0;
+	}
+}

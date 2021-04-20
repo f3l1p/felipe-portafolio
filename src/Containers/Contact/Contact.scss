@@ -3,7 +3,7 @@
 	margin: 0;
 	padding: 0;
 	width: 100%;
-	height: 82vh;
+	height: 68vh;
 	background-color: #3f3c3b;
 
 	text-align: center;
@@ -18,13 +18,17 @@
 	}
 
 	h4 {
-		font-size: 3rem;
+		font-size: 2.5rem;
 		font-style: italic;
 	}
 
 	span {
 		color: #e54b4b;
 	}
+}
+
+.Contact-Content {
+	margin-top: 10%;
 }
 
 .Button-Wrap {
@@ -46,5 +50,17 @@
 
 	.Gmail-Button {
 		background-color: #e54b4b;
+	}
+}
+
+.Soundbetter-wrap {
+	width: 100%;
+	direction: flex;
+	flex-direction: row;
+	text-align: center;
+
+	.Soundbetter {
+		max-width: 200px;
+		margin: 3rem 0;
 	}
 }

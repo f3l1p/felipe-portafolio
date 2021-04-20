@@ -27,7 +27,7 @@ const home = () => {
 						<Typing.Delay ms={800} />
 						<li>Front End Web Dev</li>
 						<Typing.Delay ms={800} />
-						<li>Game Lover</li>
+						<li>Games Lover</li>
 					</Typing>
 				</ul>
 			</div>

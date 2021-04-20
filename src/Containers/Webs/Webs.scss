@@ -1,0 +1,12 @@
+.Webs {
+	box-sizing: border-box;
+	background-color: #3f3c3b;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 200%;
+	overflow-y: auto;
+
+	display: flex;
+	flex-direction: column;
+}
