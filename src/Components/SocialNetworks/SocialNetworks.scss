@@ -1,0 +1,17 @@
+.Social-menu {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+
+	list-style: none;
+
+	li {
+		margin: 0 8px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.Social-menu {
+		display: none;
+	}
+}

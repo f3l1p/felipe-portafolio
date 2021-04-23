@@ -9,7 +9,6 @@ const ListOfBands = () => {
 			<div className="List-Bands">
 				<h2>Bands</h2>
 				<ul>
-					<Band band="" country="Colombia" />
 					<Band band="The Spotglow " country="Colombia" />
 					<Band band="Coctel Veneno " country="Chile" />
 					<Band band="Nick Velped " country="Colombia" />

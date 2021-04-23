@@ -1,5 +1,5 @@
 .Card-Row {
-	margin: 2.5rem 3rem;
+	margin: 3rem 3rem;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-evenly;
@@ -35,6 +35,33 @@
 			font-size: 20px;
 			font-weight: 400;
 		}
+		.Link-Page {
+			font-size: 20px;
+			font-weight: 400;
+			color: #e54b4b;
+			padding: 0.5rem;
+			margin: 1rem;
+			text-decoration: none;
+
+			border: 2px solid;
+			border-radius: 8px;
+			width: fit-content;
+
+			display: flex;
+			flex-direction: row;
+			align-self: center;
+
+			transition: ease-out 0.3s;
+
+			&:hover {
+				border-color: #e54b4b;
+				color: #f7ebe8;
+				background-color: #e54b4b;
+
+				transition: 0.5s all ease;
+				cursor: pointer;
+			}
+		}
 	}
 }
 
@@ -50,5 +77,11 @@
 	img {
 		max-width: 70vh;
 		align-self: center;
+
+		width: fit-content;
+
+		box-shadow: -5px 6px 11px 0px rgba(0, 0, 0, 0.3);
+		-webkit-box-shadow: -5px 6px 11px 0px rgba(0, 0, 0, 0.3);
+		-moz-box-shadow: -5px 6px 11px 0px rgba(0, 0, 0, 0.3);
 	}
 }

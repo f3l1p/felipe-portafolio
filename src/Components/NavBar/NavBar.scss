@@ -1,0 +1,39 @@
+.Lead-menu {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+
+	list-style: none;
+
+	li {
+		margin: 0 8px;
+		padding: 0;
+		font-size: 1.2rem;
+
+		&:hover {
+			color: #e54b4b;
+			transition: ease-in 0.8s;
+			cursor: pointer;
+		}
+
+		&:active {
+			color: #e54b4b;
+		}
+	}
+}
+
+.Lead-menu-container {
+	margin: 0;
+	width: 100%;
+	height: max-content;
+
+	display: flex;
+	flex-direction: column;
+}
+
+@media screen and (max-width: 768px) {
+	.Lead-Menu-off {
+		display: none;
+	}
+}

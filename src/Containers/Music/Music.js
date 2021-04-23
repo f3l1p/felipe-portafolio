@@ -5,6 +5,8 @@ import SpotyEmbed from "../../Components/SpotyEmbed/SpotyEmbed";
 import ListOfBands from "../../Components/ListOFBands/ListOfBands";
 import Videos from "./VideoSection/VideoSection";
 
+import { falldown as Menu } from "react-burger-menu";
+
 const Music = () => {
 	const [Hidden, setHidden] = useState(false);
 	const ShortText = (

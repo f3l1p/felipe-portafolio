@@ -57,19 +57,16 @@
 
 @media screen and (max-width: 768px) {
 	.Home {
-		width: 100%;
-		height: 86vh;
-		background-color: #3f3c3b;
-
 		display: flex;
 		flex-direction: column;
 	}
 
 	.First-wrap {
-		margin-top: 8vh;
+		margin-top: 7vh;
 		margin-left: 5vh;
 		width: 100%;
 		text-align: start;
+
 		display: flex;
 		flex-direction: row;
 		justify-content: flex-start;
@@ -81,7 +78,7 @@
 	}
 
 	.Second-wrap {
-		margin-top: 10vh;
+		margin-top: 8vh;
 		width: 100%;
 
 		display: flex;
@@ -89,8 +86,7 @@
 		justify-content: flex-start;
 
 		ul {
-			list-style: none;
-
+			margin: 0 0;
 			li {
 				color: #f7ebe8;
 				font-size: 2rem;
