@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./Header.scss";
 
 import { Link } from "react-router-dom";
@@ -7,6 +7,15 @@ import SocialNetworks from "../SocialNetworks/SocialNetworks";
 import BurgerButton from "../BurgerButton/BurgerButton";
 
 const Header = () => {
+	const [width, setWidth] = useState(window.innerWidth);
+	const breakPoint = 1450;
+
+	useEffect(() => {
+		const handleWindowResize = () => setWidth(window.innerWidth);
+		window.addEventListener("resize", handleWindowResize);
+
+		return () => window.removeEventListener("resize", handleWindowResize);
+	}, []);
 	return (
 		<header className="header">
 			<Link to="/" style={{ color: "inherit", textDecoration: "inherit" }}>
@@ -15,9 +24,7 @@ const Header = () => {
 
 			<NavBar className="Lead-menu Lead-Menu-off" />
 
-			<SocialNetworks />
-
-			<BurgerButton />
+			{width > breakPoint ? <SocialNetworks /> : <BurgerButton />}
 		</header>
 	);
 };

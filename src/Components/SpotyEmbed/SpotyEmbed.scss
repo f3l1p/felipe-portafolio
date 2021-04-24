@@ -24,3 +24,32 @@
 	-webkit-box-shadow: -5px 6px 11px 0px rgba(0, 0, 0, 0.56);
 	-moz-box-shadow: -5px 6px 11px 0px rgba(0, 0, 0, 0.56);
 }
+
+@media only screen and (max-width: 800px) {
+	.Embed-Title {
+		margin: 0;
+		padding: 1rem 0 15px 0;
+		width: 80%;
+		height: 5vh;
+		background-color: #201e1e;
+
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+
+		h2 {
+			color: #f7ebe8;
+			margin-left: 1.2rem;
+			font-size: 1.5rem;
+			border-bottom: none;
+		}
+	}
+	.Embed-Spoty {
+		margin: 0 2rem 0 2rem;
+		width: 100%;
+
+		iframe {
+			width: 80%;
+		}
+	}
+}

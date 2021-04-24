@@ -35,3 +35,32 @@
 	flex-direction: row;
 	justify-content: space-evenly;
 }
+
+.breake-mobile {
+	display: none;
+}
+
+@media only screen and (max-width: 800px) {
+	.Video-section {
+		h2 {
+			font-size: 2.5rem;
+		}
+
+		p {
+			font-size: 1.2rem;
+		}
+
+		a {
+			font-size: 1.2rem;
+		}
+
+		.breake-mobile {
+			display: block;
+		}
+	}
+
+	.Video-Col {
+		display: flex;
+		flex-direction: column;
+	}
+}

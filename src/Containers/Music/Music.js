@@ -5,8 +5,6 @@ import SpotyEmbed from "../../Components/SpotyEmbed/SpotyEmbed";
 import ListOfBands from "../../Components/ListOFBands/ListOfBands";
 import Videos from "./VideoSection/VideoSection";
 
-import { falldown as Menu } from "react-burger-menu";
-
 const Music = () => {
 	const [Hidden, setHidden] = useState(false);
 	const ShortText = (
@@ -49,12 +47,10 @@ const Music = () => {
 						<p>
 							{Hidden ? (
 								<span className="Read-More" onClick={() => setHidden(false)}>
-									{" "}
 									read less
 								</span>
 							) : (
 								<span className="Read-More" onClick={() => setHidden(true)}>
-									{" "}
 									read more...
 								</span>
 							)}

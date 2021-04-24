@@ -1,41 +1,49 @@
 import React from "react";
 import "./NavBar.scss";
 
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const NavBar = (props) => {
 	return (
 		<>
 			<ul className={props.className}>
-				<li>
-					<Link to="/" style={{ color: "inherit", textDecoration: "inherit" }}>
+				<li className="menu-item">
+					<NavLink
+						exact
+						to="/"
+						style={{ color: "inherit", textDecoration: "inherit" }}
+						activeStyle={{ color: "#e54b4b" }}
+					>
 						HOME
-					</Link>
+					</NavLink>
 				</li>
 
-				<li>
-					<Link
+				<li className="menu-item">
+					<NavLink
 						to="/webs"
 						style={{ color: "inherit", textDecoration: "inherit" }}
+						activeStyle={{ color: "#e54b4b" }}
 					>
 						<p>WEBS</p>
-					</Link>
+					</NavLink>
 				</li>
-				<li>
-					<Link
+				<li className="menu-item">
+					<NavLink
 						to="/music"
 						style={{ color: "inherit", textDecoration: "inherit" }}
+						activeStyle={{ color: "#e54b4b" }}
 					>
 						<p>MUSIC</p>
-					</Link>
+					</NavLink>
 				</li>
-				<li>
-					<Link
+				<li className="menu-item">
+					<NavLink
 						to="/contact"
 						style={{ color: "inherit", textDecoration: "inherit" }}
+						activeStyle={{ color: "#e54b4b" }}
 					>
 						<p>CONTACT</p>
-					</Link>
+					</NavLink>
 				</li>
 			</ul>
 		</>

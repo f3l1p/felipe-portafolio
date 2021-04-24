@@ -1,8 +1,8 @@
 import React from "react";
 import "./BurgerMenu.scss";
 
-import NavBar from "../../Components/NavBar/NavBar";
 import { Link } from "react-router-dom";
+import SocialNetworks from "../../Components/SocialNetworks/SocialNetworks";
 
 const BurgerMenu = () => {
 	return (
@@ -46,6 +46,10 @@ const BurgerMenu = () => {
 					</li>
 					<span className="line"></span>
 				</ul>
+				<br />
+				<div>
+					<SocialNetworks />
+				</div>
 			</div>
 		</section>
 	);

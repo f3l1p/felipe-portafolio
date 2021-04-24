@@ -3,7 +3,7 @@ import "./RowCard.scss";
 
 const RowCard = (props) => {
 	return (
-		<div className="Card-Row">
+		<div className="Card-Row Card-Col">
 			<div className="Col-Left">
 				<div className="Text-Wrap">
 					<h2>{props.title}</h2>
