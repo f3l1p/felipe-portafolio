@@ -1,25 +1,47 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./ListOfBands.scss";
 
 import Band from "./Band/Band";
+import axios from "axios";
+
+const URL = "https://felipe-portafolio-default-rtdb.firebaseio.com/Bandas.json";
 
 const ListOfBands = () => {
+	const [list, setList] = useState([]);
+
+	useEffect(() => {
+		getList();
+	}, []);
+
+	//JSON.stringify(list)
+
+	const getList = () => {
+		axios
+			.get(URL)
+			.then((res) => {
+				//console.log(res.data);
+				const list = res.data;
+				setList(
+					list.map((band) => {
+						return (
+							<Band key={band.id} band={band.nombre} country={band.pais} />
+						);
+					})
+				);
+			})
+			.catch((err) => {
+				console.log(err);
+				return <p>Cannot Find A Band</p>;
+			});
+	};
+
+	//console.log(list);
+
 	return (
 		<section>
 			<div className="List-Bands">
 				<h2>Bands</h2>
-				<ul>
-					<Band band="The Spotglow " country="Colombia" />
-					<Band band="Coctel Veneno " country="Chile" />
-					<Band band="Nick Velped " country="Colombia" />
-					<Band band="The Rocks " country="Colombia" />
-					<Band band="Chendi Ou " country="Colombia" />
-					<Band band="Echoes In Ears AKA Sin Circus " country="Colombia" />
-					<Band band="Perdidos en Saturno " country="Colombia" />
-					<Band band="JP " country="Australia" />
-					<Band band="Leonardo Birabent " country="Colombia" />
-					<Band band="Difamia" country="Colombia" />
-				</ul>
+				<ul>{list}</ul>
 			</div>
 		</section>
 	);

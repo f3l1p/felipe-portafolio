@@ -1,10 +1,15 @@
 import React from "react";
-import Video from "../../../Components/Video/Video";
 import "./VideoSection.scss";
+
+import Video from "../../../Components/Video/Video";
 
 const VideoSection = () => {
 	const playlistVideo = (
-		<a href="https://www.youtube.com/playlist?list=PL6n0y8EjzoXZ79K9O7-xqcH987R3h2_AU">
+		<a
+			rel="noopener noreferrer"
+			target="_blank"
+			href="https://www.youtube.com/playlist?list=PL6n0y8EjzoXZ79K9O7-xqcH987R3h2_AU"
+		>
 			Here!
 		</a>
 	);

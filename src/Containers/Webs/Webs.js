@@ -12,21 +12,23 @@ const webs = () => {
 		<section className="Webs">
 			<RowCard
 				title="Spotglow Land"
-				description="This website was made with React JS, with the intention of promote her album THE SPOTGLOW in 2019"
+				description="
+				This site was created with React JS as a promotion for the album THE SPOTGLOW which was released in 2019.
+				I worked with a design team to prototype and understand the visual needs the band wanted to achieve in programming."
 				contentR={theSpot}
 				link="https://the-spotglow-land.web.app/"
 			/>
 
 			<RowCard
 				title="W.L.4.Y"
-				description="It`s a very simple quote machine, made for my girlfriend. The background color changes randomly with every random quote."
+				description="One of my personal React JS projects I did mainly for my girlfriend, was to create a random quote machine that would show phrases from movies and series that she enjoys. In addition to that it will also change the background randomly."
 				contentR={wl4y}
 				link="https://wl4y-d4258.web.app/"
 			/>
 
 			<RowCard
 				title="Web Compras"
-				description="An E-Commerce website made with Worpress."
+				description="As part of my growth in web development, I managed to work for the Chilean company Web Compras developing its E-Commerce with wordpress and connecting it with bluehost."
 				contentR={webCompras}
 				link="https://webcompras.cl/"
 			/>
