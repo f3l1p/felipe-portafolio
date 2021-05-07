@@ -14,7 +14,7 @@ const BurgerMenu = () => {
 							to="/"
 							style={{ color: "inherit", textDecoration: "inherit" }}
 						>
-							HOME
+							<p>HOME</p>
 						</Link>
 					</li>
 					<span className="line"></span>

@@ -1,6 +1,8 @@
 import React from "react";
-import { SocialIcon } from "react-social-icons";
 import "./Contact.scss";
+
+import { SocialIcon } from "react-social-icons";
+import SoundBetterIcon from "../../Components/SoundBetterIcon/SoundBetterIcon";
 
 const contact = () => {
 	return (
@@ -9,25 +11,17 @@ const contact = () => {
 				<h1>
 					Contact Me<span>!</span>
 				</h1>
+				<br />
 
 				<h4>I apreciate every comments or sugestion</h4>
+				<br />
 				<br />
 				<div className="Button-Wrap">
 					<button className="Gmail-Button">
 						<SocialIcon
 							target="_blank"
 							network="email"
-							url="https://mail.google.com/mail/?view=cm&fs=1&to=wnrad.f@gmail.com&su=SUBJECT&body=BODY"
-							bgColor="#1C00ff00"
-							fgColor="#f7ebe8"
-							style={{ height: 100, width: 100 }}
-						/>
-					</button>
-					<button className="Whatsapp-Button">
-						<SocialIcon
-							target="_blank"
-							url="https://wa.me/573219652186"
-							network="whatsapp"
+							url="https://mail.google.com/mail/?view=cm&fs=1&to=wnrad.f@gmail.com&su=&body="
 							bgColor="#1C00ff00"
 							fgColor="#f7ebe8"
 							style={{ height: 100, width: 100 }}
@@ -35,20 +29,8 @@ const contact = () => {
 					</button>
 				</div>
 			</div>
-			<div className="Soundbetter-wrap">
-				<a
-					href="https://soundbetter.com/profiles/28111-felipe-chicangana"
-					rel="noopener noreferrer"
-					target="_blank"
-					title="Felipe Chicangana profile on SoundBetter"
-				>
-					<img
-						className="Soundbetter"
-						alt="Felipe Chicangana, Producer on SoundBetter"
-						src="https://d2p6ecj15pyavq.cloudfront.net/assets/SoundBetterBadge-1bc672131a12c38bd822195fbe5d0e17.svg"
-					/>
-				</a>
-			</div>
+			<br />
+			<SoundBetterIcon />
 		</section>
 	);
 };

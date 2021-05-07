@@ -1,9 +1,15 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./VideoSection.scss";
 
 import Video from "../../../Components/Video/Video";
+import axios from "axios";
+import { Container, Row, Col } from "react-bootstrap";
+
+const URL = "https://felipe-portafolio-default-rtdb.firebaseio.com/videos.json";
 
 const VideoSection = () => {
+	const [list, setList] = useState([]);
+
 	const playlistVideo = (
 		<a
 			rel="noopener noreferrer"
@@ -13,33 +19,36 @@ const VideoSection = () => {
 			Here!
 		</a>
 	);
+
+	useEffect(() => {
+		getList();
+	}, []);
+
+	const getList = () => {
+		axios.get(URL).then((res) => {
+			let videoList = res.data;
+			console.log(videoList);
+			setList(
+				videoList.map((band) => {
+					return (
+						<Col>
+							<Video url={band.link} />
+						</Col>
+					);
+				})
+			);
+		});
+	};
+
 	return (
-		<section className="Video-section">
+		<section className="video-section">
 			<h2>Videos</h2>
 			<p>For more videos visit: {playlistVideo}</p>
-			<div className="Video-col">
-				<div className="Video-row Video-Col">
-					<Video url="https://www.youtube.com/watch?v=VzD3wL0R8TM&ab_channel=EchoesInEarsBand" />
-					<br className="breake-mobile" />
-					<Video url="https://www.youtube.com/watch?v=-oje8ZK08rk&ab_channel=NickVelPed" />
-					<br className="breake-mobile" />
-					<Video url="https://www.youtube.com/watch?v=_VNpkrA92pI&ab_channel=Coct%C3%A9lVeneno-Topic" />
-				</div>
-				<div className="Video-row Video-Col">
-					<Video url="https://www.youtube.com/watch?v=giwjH9RXDMg&ab_channel=THESPOTGLOW" />
-					<br className="breake-mobile" />
-					<Video url="https://www.youtube.com/watch?v=6PcAxEfX1rs&ab_channel=THESPOTGLOW" />
-					<br className="breake-mobile" />
-					<Video url="https://www.youtube.com/watch?v=s5NSlX-j8O0&ab_channel=EchoesInEarsBand" />
-				</div>
-				<div className="Video-row Video-Col">
-					<Video url="https://www.youtube.com/watch?v=kCe2ixVjybQ&ab_channel=DifamiaBanda" />
-					<br className="breake-mobile" />
-					<Video url="https://www.youtube.com/watch?v=4wBd83E1Te0&ab_channel=leonardobirabent" />
-					<br className="breake-mobile" />
-					<Video url="https://www.youtube.com/watch?v=x1sH5IZj6w4&ab_channel=NickVelPed" />
-				</div>
-			</div>
+			<Container fluid>
+				<Row xs={1} md={3} lg={3}>
+					{list}
+				</Row>
+			</Container>
 		</section>
 	);
 };

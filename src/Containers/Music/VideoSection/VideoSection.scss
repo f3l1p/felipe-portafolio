@@ -1,4 +1,4 @@
-.Video-section {
+.video-section {
 	box-sizing: content-box;
 	text-align: center;
 
@@ -16,28 +16,6 @@
 		font-size: 1.5rem;
 		color: #e54b4b;
 	}
-}
-
-.Video-col {
-	margin: 0;
-	padding: 0;
-
-	display: flex;
-	flex-direction: column;
-	justify-content: space-evenly;
-}
-
-.Video-row {
-	margin: 2rem 0;
-	padding: 0;
-
-	display: flex;
-	flex-direction: row;
-	justify-content: space-evenly;
-}
-
-.breake-mobile {
-	display: none;
 }
 
 @media only screen and (max-width: 800px) {

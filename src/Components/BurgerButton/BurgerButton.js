@@ -14,7 +14,7 @@ const BurgerButton = () => {
 	console.log(string[2]);
 	return (
 		<Link to="/burger-menu">
-			<div className="container container-off" onClick={changeButton}>
+			<div className="button-on button-off" onClick={changeButton}>
 				<div className={string[0]}></div>
 				<div className={string[1]}></div>
 				<div className={string[2]}></div>

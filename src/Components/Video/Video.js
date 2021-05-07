@@ -5,13 +5,15 @@ import "./Video.scss";
 
 const Video = (props) => {
 	return (
-		<ReactPlayer
-			className="Video"
-			width="30rem"
-			height="20rem"
-			controls
-			url={props.url}
-		/>
+		<div className="player-wrapper">
+			<ReactPlayer
+				className="video"
+				width="100%"
+				height="100%"
+				controls
+				url={props.url}
+			/>
+		</div>
 	);
 };
 

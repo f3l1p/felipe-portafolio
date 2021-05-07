@@ -7,11 +7,14 @@ const NavBar = (props) => {
 	return (
 		<>
 			<ul className={props.className}>
-				<li className="menu-item">
+				<li className="menu-item align-middle">
 					<NavLink
 						exact
 						to="/"
-						style={{ color: "inherit", textDecoration: "inherit" }}
+						style={{
+							color: "inherit",
+							textDecoration: "inherit",
+						}}
 						activeStyle={{ color: "#e54b4b" }}
 					>
 						HOME
@@ -24,7 +27,7 @@ const NavBar = (props) => {
 						style={{ color: "inherit", textDecoration: "inherit" }}
 						activeStyle={{ color: "#e54b4b" }}
 					>
-						<p>WEBS</p>
+						WEBS
 					</NavLink>
 				</li>
 				<li className="menu-item">
@@ -33,7 +36,7 @@ const NavBar = (props) => {
 						style={{ color: "inherit", textDecoration: "inherit" }}
 						activeStyle={{ color: "#e54b4b" }}
 					>
-						<p>MUSIC</p>
+						MUSIC
 					</NavLink>
 				</li>
 				<li className="menu-item">
@@ -42,7 +45,7 @@ const NavBar = (props) => {
 						style={{ color: "inherit", textDecoration: "inherit" }}
 						activeStyle={{ color: "#e54b4b" }}
 					>
-						<p>CONTACT</p>
+						CONTACT
 					</NavLink>
 				</li>
 			</ul>

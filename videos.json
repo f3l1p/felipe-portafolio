@@ -1,0 +1,74 @@
+[
+	{
+		"id": 0,
+		"band": "Coctel Veneno",
+		"song": "Quereme Despues",
+		"link": "https://www.youtube.com/watch?v=_VNpkrA92pI&ab_channel=Coct%C3%A9lVeneno-Topic"
+	},
+	{
+		"id": 1,
+		"band": "Echoes In Ears AKA Sin Circus",
+		"song": "aereo",
+		"link": "https://www.youtube.com/watch?v=VzD3wL0R8TM&ab_channel=EchoesInEarsBand"
+	},
+	{
+		"id": 2,
+		"band": "Nick Velped",
+		"song": "Perdon",
+		"link": "https://www.youtube.com/watch?v=-oje8ZK08rk&ab_channel=NickVelPed"
+	},
+	{
+		"id": 3,
+		"band": "The Spotglow",
+		"song": "Hurricane",
+		"link": "https://www.youtube.com/watch?v=6PcAxEfX1rs&ab_channel=THESPOTGLOW"
+	},
+	{
+		"id": 4,
+		"band": "Leonardo Birabent",
+		"song": "De dos a tres",
+		"link": "https://www.youtube.com/watch?v=4wBd83E1Te0&list=PL6n0y8EjzoXZ79K9O7-xqcH987R3h2_AU&index=17&ab_channel=leonardobirabent"
+	},
+	{
+		"id": 5,
+		"band": "Perdidos en Saturno",
+		"song": "Despertar",
+		"link": "https://www.youtube.com/watch?v=SnVOkIu_jQ0&list=PL6n0y8EjzoXZ79K9O7-xqcH987R3h2_AU&index=10&ab_channel=PerdidosenSaturno"
+	},
+	{
+		"id": 6,
+		"band": "Nick Velped",
+		"song": "Gorgeous",
+		"link": "https://www.youtube.com/watch?v=x1sH5IZj6w4&list=PL6n0y8EjzoXZ79K9O7-xqcH987R3h2_AU&index=13&ab_channel=NickVelPed"
+	},
+	{
+		"id": 7,
+		"band": "Coctel Veneno",
+		"song": "Fue",
+		"link": "https://www.youtube.com/watch?v=lFSVmeEd3UI&list=PL6n0y8EjzoXZ79K9O7-xqcH987R3h2_AU&index=3"
+	},
+	{
+		"id": 8,
+		"band": "The Spotglow",
+		"song": "There's No Color",
+		"link": "https://www.youtube.com/watch?v=giwjH9RXDMg&list=PL6n0y8EjzoXZ79K9O7-xqcH987R3h2_AU&index=16&ab_channel=THESPOTGLOW"
+	},
+	{
+		"id": 9,
+		"band": "Perdidos en Saturno",
+		"song": "There's No Color",
+		"link": "https://www.youtube.com/watch?v=Bh63BS083Aw&ab_channel=PerdidosenSaturno"
+	},
+	{
+		"id": 10,
+		"band": "The Spotglow",
+		"song": "No Regret",
+		"link": "https://www.youtube.com/watch?v=GdnMY2dhnKI&list=PL6n0y8EjzoXZ79K9O7-xqcH987R3h2_AU&index=26&ab_channel=THESPOTGLOW"
+	},
+	{
+		"id": 11,
+		"band": "Echoes in Ears AKA Sin Circus",
+		"song": "Six Barrel Shotgun",
+		"link": "https://www.youtube.com/watch?v=kCktbPkOw2M&ab_channel=EchoesInEarsBand"
+	}
+]

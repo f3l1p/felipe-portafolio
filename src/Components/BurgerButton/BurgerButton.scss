@@ -1,4 +1,4 @@
-.container {
+.button-on {
 	display: inline-block;
 	cursor: pointer;
 }
@@ -28,7 +28,7 @@
 }
 
 @media (min-width: 800px) {
-	.container-off {
+	.button-off {
 		position: fixed;
 		display: none;
 	}
